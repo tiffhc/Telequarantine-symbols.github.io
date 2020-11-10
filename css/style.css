@@ -4,7 +4,10 @@ html, body {
 
 
 body {
-	
-	background-color: blue; 
+	/*background:radial-gradient(200% 100% at bottom center,#550F5E,#E96F92 20%,#75517D,#1B2947 40%); */ 
+	/* background:radial-gradient(220% 105% at top center,#1B2947 10%,#75517D 30%,#E96F92 50%,#75517D 65%, #2B1A55);*/ 
+	background:radial-gradient(220% 105% at top center,#1B2947 10%,#550F5E 50%, #2B1A55);
+	background-attachment:fixed; 
+	overflow:hidden;
 }
 
