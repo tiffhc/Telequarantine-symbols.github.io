@@ -37,7 +37,17 @@ body {
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    -webkit-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%; 
+	
+	/*animation for moving
+	z-index:3;
+
+	-moz-animation:move-clouds-back 200s linear infinite;
+	-ms-animation:move-clouds-back 200s linear infinite;
+	-o-animation:move-clouds-back 200s linear infinite;
+	-webkit-animation:move-clouds-back 200s linear infinite;
+	animation:move-clouds-back 200s linear infinite;
+	*/ 
 }
 .card div {
     display: block;
