@@ -7,8 +7,29 @@
   <body>
     <h1> welcome to Telequarantine symbols </h1> 
    
-   
+	<div class="col-md-4" id="flip3">
+		<h1> testing flipping card </h1> 
+		<div class="flip-container">
+			<div class="card">
+				<div class="front">
+				
+				</div>
+				<div class="back">
+				
+				</div>
+			</div>
+		</div>
+	</div> 
+	
+	<!-- src="js/main.js" --> 
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".card").on('click', function() {
+				$('.card').toggleClass('flipped'); 
+			}); 
+		});
+	
+	</script>
+	
   </body>
-  
- 
 </html>
