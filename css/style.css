@@ -52,10 +52,12 @@ body {
 .card .front {
   	background: red;
   	
-  	background-image: url(https://www.artranked.com/images/43/4337597bc4535dc484c5d2e3f32707ce.jpg);
+  	background-image: url(../images/backcover.png);
 	background-size:100% 100%;
 	background-repeat: no-repeat;
 }
+
+/*backcover will be the same */ 
 .card .back {
     background: blue;
     -webkit-transform: rotateY( 180deg );
@@ -63,7 +65,7 @@ body {
     -o-transform: rotateY( 180deg );
     transform: rotateY( 180deg );
 
-    background-image: url(https://pixfeeds.com/images/8/326781/1200-511676686-old-tarot-card.jpg);
+    background-image: url(../images/testcard.jpg);
 	background-size:100% 100%;
 	background-repeat: no-repeat;
 }
