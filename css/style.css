@@ -29,6 +29,11 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
+	
+	bottom: 0; 
+	left: 0; 
+	right: 0;
+	
     -webkit-transition: -webkit-transform 1s;
     -moz-transition: -moz-transform 1s;
     -o-transition: -o-transform 1s;
@@ -39,16 +44,18 @@ body {
     transform-style: preserve-3d;
     -webkit-transform-origin: 50% 50%; 
 	
-	/*animation for moving
-	z-index:3;
+	z-index: 1; 
+	animation: floating 5s linear infinite; 
 
-	-moz-animation:move-clouds-back 200s linear infinite;
-	-ms-animation:move-clouds-back 200s linear infinite;
-	-o-animation:move-clouds-back 200s linear infinite;
-	-webkit-animation:move-clouds-back 200s linear infinite;
-	animation:move-clouds-back 200s linear infinite;
-	*/ 
 }
+
+@keyframes floating
+{
+	100% {
+		transform: 
+	}
+}
+
 .card div {
     display: block;
     height: 100%;
@@ -58,6 +65,8 @@ body {
     -moz-backface-visibility: hidden;
     -o-backface-visibility: hidden;
     backface-visibility: hidden;
+	
+	
 }
 .card .front {
   	background: red;
@@ -65,6 +74,8 @@ body {
   	background-image: url(../images/backcover.png);
 	background-size:100% 100%;
 	background-repeat: no-repeat;
+	
+	
 }
 
 /*backcover will be the same */ 
@@ -78,6 +89,8 @@ body {
     background-image: url(../images/testcard.jpg);
 	background-size:100% 100%;
 	background-repeat: no-repeat;
+	
+	
 }
 .card.flipped {
     -webkit-transform: rotateY( 180deg );
