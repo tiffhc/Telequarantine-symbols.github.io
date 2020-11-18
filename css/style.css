@@ -47,16 +47,9 @@ body {
     -webkit-transform-origin: 50% 50%; 
 	
 	z-index: 1; 
-	animation: floating 5s linear infinite; 
-
+	
 }
 
-@keyframes floating
-{
-	100% {
-		transform: 
-	}
-}
 
 .card div {
     display: block;
@@ -78,7 +71,29 @@ body {
 	background-size:100% 100%;
 	background-repeat: no-repeat;
 	
+	animation-name: floating;  /*floating 5s linear infinite; */ 
+	animation-iteration-count: infinite; /*infinite */ 
+	/* animation-direction: alternate; */ 
+	animation-duration: 4s; 
+	animation-timing-function: ease-in-out; 
 }
+
+@keyframes floating {
+	from, to {
+		transform: translate(0,5%);
+	}
+	25% {
+		transform: translate(-5%,0);
+	}
+	50% {
+		transform: translate(0,-5%);
+	}
+	75% {
+		transform: translate(5%,0);
+	}
+	
+}
+
 
 /*flipped pictures will be different so maybe use IDs*/ 
 .card #back1 {
@@ -92,15 +107,19 @@ body {
 	background-size:100% 100%;
 	background-repeat: no-repeat;
 	
-	
 }
+
 
 /* new class states */ 
 .card.flipped {
+	
     -webkit-transform: rotateY( 180deg );
     -moz-transform: rotateY( 180deg );
     -o-transform: rotateY( 180deg );
     transform: rotateY( 180deg );
+	
+	
+	
 }
 
 .card.enlarged {
