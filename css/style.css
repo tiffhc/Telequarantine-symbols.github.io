@@ -13,11 +13,13 @@ body {
 
 /*CSS za onClick image flip code by: https://codepen.io/Karadjordje/pen/MbBXRa */
 
+
+
 /*CSS za onClick image flip*/
 .flip-container {
-    width: 350px;
-    height: 480px;
-    position: relative;
+    width: 35px;
+    height: 48px;
+    position: relative; 
   /*
     -webkit-perspective: 1000px;
     -moz-perspective: 1000px;
@@ -68,18 +70,18 @@ body {
 	
 	
 }
+
+/*bacover will be the same */ 
 .card .front {
   	background: red;
-  	
   	background-image: url(../images/backcover.png);
 	background-size:100% 100%;
 	background-repeat: no-repeat;
 	
-	
 }
 
-/*backcover will be the same */ 
-.card .back {
+/*flipped pictures will be different so maybe use IDs*/ 
+.card #back1 {
     background: blue;
     -webkit-transform: rotateY( 180deg );
     -moz-transform: rotateY( 180deg );
@@ -92,9 +94,17 @@ body {
 	
 	
 }
+
+/* new class states */ 
 .card.flipped {
     -webkit-transform: rotateY( 180deg );
     -moz-transform: rotateY( 180deg );
     -o-transform: rotateY( 180deg );
     transform: rotateY( 180deg );
+}
+
+.card.enlarged {
+	width: 350px;
+    height: 480px;
+	position: relative;
 }

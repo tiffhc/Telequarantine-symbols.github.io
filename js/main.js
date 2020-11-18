@@ -8,11 +8,13 @@ $('.card').click(flipIt);
 
 $(document).ready(function(){
 	$(".card").on('click', function() {
+		$('.card').toggleClass('enlarged'); 
+		
 		$('.card').toggleClass('flipped'); 
 	}); 
 });
 
-/*how to code elements to move */ 
+/*how to code elements to move 
 var position = 0;
 var current_card = document.getElementById("card1"); 
 var interval = setInterval(function() {
@@ -20,11 +22,4 @@ var interval = setInterval(function() {
 	$("body").css({ "card1":+ position +"px 0px" })
 }, 35);
 
-
-
-
-/*
-function AnimateCard(){
-	var 
-}
-*/
+*/ 
