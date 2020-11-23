@@ -34,7 +34,7 @@ body {
     perspective: 1000px;
   */
 	z-index: 10; 
-  
+ 
 }
 
 .flip-container.pre {
@@ -42,7 +42,7 @@ body {
 }
 
 .flip-container.post{
-	opacity: 100; 
+	opacity: 1; 
 }
 
 .card {
@@ -50,9 +50,9 @@ body {
     height: 100%;
     position: absolute;
 	
-	bottom: 0; 
+	/*bottom: 0; 
 	left: 0; 
-	right: 0;
+	right: 0; */ 
 	
     -webkit-transition: -webkit-transform 1s;
     -moz-transition: -moz-transform 1s;
@@ -82,7 +82,7 @@ body {
 }
 
 /*bacover will be the same */ 
-.card .front {
+.card #front1 {
   	background: red;
   	background-image: url(../images/Backcover.png);
 	background-size:100% 100%;
@@ -93,6 +93,10 @@ body {
 	/* animation-direction: alternate; */ 
 	animation-duration: 4s; 
 	animation-timing-function: ease-in-out; 
+	
+	left: 50px;
+	top: 30px; 
+	
 }
 
 @keyframes floating {
@@ -140,7 +144,8 @@ body {
 .card.enlarged {
 	width: 350px;
     height: 637px;
-	position: relative;
+	
+	
 }
 
 /*stars background */ 
