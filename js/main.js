@@ -45,6 +45,13 @@ var interval = setInterval(function() {
 
 */ 
 
+
+function cardscontrol() {
+	var c = document.getElementsByClassName("flip-container"); //get all the cards '
+
+	
+}
+
 //stars code
 
 blackhole('#blackhole');
@@ -145,6 +152,9 @@ function blackhole(element) {
 
 
 		if(!expanse){
+		
+			
+			
 			this.rotation = this.startRotation + (currentTime * this.speed);
 			if(!collapse){ // not hovered
 				if(this.y > this.yOrigin){
@@ -163,6 +173,13 @@ function blackhole(element) {
 				}
 			}
 		} else {
+			//once it is expanded
+			
+			//function that makes the cards appear
+			
+			//function that makes the cards clickable 
+			
+			
 			this.rotation = this.startRotation + (currentTime * (this.speed / 2));
 			if(this.y > this.expansePos){
 				this.y-= Math.floor(this.expansePos - this.y) / -140;
