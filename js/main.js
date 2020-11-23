@@ -134,7 +134,7 @@ function blackhole(element) {
 		}
 
 		stars.push(this);
-		this.color = 'rgba(255,255,255,'+ (1 - ((this.orbital) / 255)) +')'; // Color the star white, but make it more transparent the further out it is generated
+		this.color = 'rgba(255,255,255,'+ (2 - ((this.orbital) / 255)) +')'; // Color the star white, but make it more transparent the further out it is generated //255, 1
 
 		this.hoverPos = centery + (maxorbit/2) + this.collapseBonus;  // Where the star will go on hover of the blackhole
 		this.expansePos = centery + (this.id%100)*-10 + (Math.floor(Math.random() * 20) + 1); // Where the star will go when expansion takes place

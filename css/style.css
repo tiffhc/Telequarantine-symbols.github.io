@@ -48,11 +48,11 @@ body {
 .card {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: absolute; 
 	
 	/*bottom: 0; 
 	left: 0; 
-	right: 0; */ 
+	right: 0; */
 	
     -webkit-transition: -webkit-transform 1s;
     -moz-transition: -moz-transform 1s;
@@ -127,8 +127,8 @@ body {
     background-image: url(../images/Alluring.png);
 	background-size:100% 100%;
 	background-repeat: no-repeat;
-	
 }
+	
 
 
 /* new class states */ 
@@ -225,3 +225,12 @@ canvas {
 	margin: auto; 
 }
 
+footer {
+	z-index: 5; 
+	
+}
+
+footer a {
+	color: white; 
+	
+}
