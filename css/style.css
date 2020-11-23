@@ -123,7 +123,7 @@ body {
     -webkit-transform: rotateY( 180deg );
     -moz-transform: rotateY( 180deg );
     -o-transform: rotateY( 180deg );
-    transform: rotateY( 180deg );
+    transform: rotateY( 180deg ) translateX(550px) translateY(30px);
 
     background-image: url(../images/Alluring.png);
 	background-size:100% 100%;
@@ -144,7 +144,6 @@ body {
 .card.enlarged {
 	width: 350px;
     height: 637px;
-	
 	
 }
 
