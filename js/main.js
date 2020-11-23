@@ -8,8 +8,8 @@ $('.card').click(flipIt);
 
 $(document).ready(function(){
 	$(".card").on('click', function() {	
-		$('.card').toggleClass('enlarged'); 
 		$('.card').toggleClass('flipped'); 
+		$('.card').toggleClass('enlarged'); 
 		
 		//check if the card has this class in it - don't need for now 
 		/*
@@ -209,6 +209,9 @@ function blackhole(element) {
 	$('.centerHover').on('click',function(){
 		collapse = false;
 		expanse = true;
+		
+		//make the cards appeart
+		$('.card').toggleClass('show'); 
 
 		$(this).addClass('open');
 		$('.fullpage').addClass('open');

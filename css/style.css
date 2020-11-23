@@ -65,7 +65,8 @@ body {
     -webkit-transform-origin: 50% 50%; 
 	
 	z-index: 10;
-	
+	opacity: 0; 
+
 }
 
 
@@ -130,7 +131,6 @@ body {
 }
 	
 
-
 /* new class states */ 
 .card.flipped {
 	
@@ -146,6 +146,10 @@ body {
     height: 637px;
 	
 	
+}
+
+.card.show {
+	opacity: 1; 
 }
 
 /*stars background */ 
