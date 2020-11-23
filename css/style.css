@@ -3,6 +3,8 @@
 
 html, body {
 	height: 100%; 
+	width: 100%; 
+	padding: 0; 
 }
 
 
@@ -119,15 +121,19 @@ body {
 
 /*flipped pictures will be different so maybe use IDs*/ 
 .card #back1 {
-    background: blue;
+    /*background: blue;*/  
+	
+	
     -webkit-transform: rotateY( 180deg );
     -moz-transform: rotateY( 180deg );
     -o-transform: rotateY( 180deg );
-    transform: rotateY( 180deg ) translateX(550px) translateY(30px);
+    transform: rotateY( 180deg ) translateX(200px) translateY(-760px) scale(0.3); /*rotateY( 180deg )*/ 
 
     background-image: url(../images/Alluring.png);
 	background-size:100% 100%;
 	background-repeat: no-repeat;
+	
+
 }
 	
 
@@ -138,12 +144,16 @@ body {
     -moz-transform: rotateY( 180deg );
     -o-transform: rotateY( 180deg );
     transform: rotateY( 180deg );
+
 	
 }
 
 .card.enlarged {
+	/*
 	width: 350px;
-    height: 637px;
+    height: 637px; */
+	width: 1128px;
+	height: 2234px; 
 	
 }
 
@@ -247,5 +257,4 @@ footer {
 
 footer a {
 	color: white; 
-	
 }
