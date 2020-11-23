@@ -264,3 +264,10 @@ footer a {
 	text-decoration: none; 
 }
 
+/* CREDITS */ 
+
+#creds {
+	padding: 10px 20px; 
+	color: white; 
+	
+}
