@@ -223,7 +223,12 @@ function blackhole(element) {
 		var now = new Date().getTime();
 		currentTime = (now - startTime) / 50;
 
-		context.fillStyle = 'rgba(25,25,25,0.2)'; // somewhat clear the context, this way there will be trails behind the stars 
+		var gradient = context.createLinearGradient(0, 0, 0, 500); 
+		gradient.addColorStop(0, '#1B2947', 0.1); 
+		gradient.addColorStop(0.5, '#550f5E', 0.5); 
+		gradient.addColorStop(1, '#2B1A55'); 
+		
+		context.fillStyle = gradient; // somewhat clear the context, this way there will be trails behind the stars 'rgba(25,25,25,0.2)'
 		context.fillRect(0, 0, cw, ch);
 
 		for(var i = 0; i < stars.length; i++){  // For each star
@@ -236,7 +241,12 @@ function blackhole(element) {
 	}
 
 	function init(time){
-		context.fillStyle = 'rgba(25,25,25,1)';  // Initial clear of the canvas, to avoid an issue where it all gets too dark
+		var gradient = context.createLinearGradient(0, 20, 0, 350); 
+		gradient.addColorStop(0, '#1B2947', 0.1); 
+		gradient.addColorStop(0.5, '#550f5E', 0.5); 
+		gradient.addColorStop(1, '#2B1A55'); 
+		
+		context.fillStyle = gradient;  // Initial clear of the canvas, to avoid an issue where it all gets too dark (25,25,25,1)
 		context.fillRect(0, 0, cw, ch);
 		for(var i = 0; i < 2500; i++){  // create 2500 stars
 			new star();

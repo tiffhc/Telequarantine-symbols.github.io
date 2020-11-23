@@ -1,3 +1,6 @@
+
+
+
 html, body {
 	height: 100%; 
 }
@@ -71,7 +74,7 @@ body {
 /*bacover will be the same */ 
 .card .front {
   	background: red;
-  	background-image: url(../images/backcover.png);
+  	background-image: url(../images/Backcover.png);
 	background-size:100% 100%;
 	background-repeat: no-repeat;
 	
@@ -107,7 +110,7 @@ body {
     -o-transform: rotateY( 180deg );
     transform: rotateY( 180deg );
 
-    background-image: url(../images/testcard.jpg);
+    background-image: url(../images/Alluring.png);
 	background-size:100% 100%;
 	background-repeat: no-repeat;
 	
@@ -122,13 +125,11 @@ body {
     -o-transform: rotateY( 180deg );
     transform: rotateY( 180deg );
 	
-	
-	
 }
 
 .card.enlarged {
 	width: 350px;
-    height: 480px;
+    height: 637px;
 	position: relative;
 }
 
