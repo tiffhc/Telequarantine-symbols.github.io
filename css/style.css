@@ -1,0 +1,1210 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap'); /*baloo tammudu 2 */ 
+
+html, body {
+	height: 100%; 
+	width: 100%; 
+	margin: 0;
+	padding: 0; 
+}
+
+
+body {
+	/*background:radial-gradient(200% 100% at bottom center,#550F5E,#E96F92 20%,#75517D,#1B2947 40%); */ 
+	/* background:radial-gradient(220% 105% at top center,#1B2947 10%,#75517D 30%,#E96F92 50%,#75517D 65%, #2B1A55);*/ 
+	
+	background:radial-gradient(220% 105% at top center,#1B2947 10%,#550F5E 50%, #2B1A55);
+	background-attachment:fixed; 
+	overflow:hidden;
+}
+
+/*CSS za onClick image flip code by: https://codepen.io/Karadjordje/pen/MbBXRa */
+
+#universe {
+	height: 100%; 
+	width: 100%; 
+	z-index: 1;
+	padding: 0; 
+
+}
+
+/*CSS za onClick image flip*/
+.cards{
+    position: relative; 
+  /*
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -o-perspective: 1000px;
+    perspective: 1000px;
+  */
+	z-index: 10; 
+	opacity: 0; 
+ 
+}
+
+
+.cards.show {
+	-webkit-animation-name: showup; 
+	-webkit-animation-duration: 5s; 
+	-webkit-animation-timing-function: ease-in-out; 
+	-webkit-animation-iteration-count: 1; 
+	
+	animation-name: showup; 
+	animation-duration: 5s; 
+	animation-timing-function: ease-in-out; 
+	animation-iteration-count: 1; 
+	
+	opacity: 1; 
+	
+}
+
+@keyframes showup {
+	0% {opacity: 0;}
+	100% {opacity: 1} 
+}
+
+/** CODE FOR ALL THE CARDS - SUPER LONG HARD CODED */ 
+
+@keyframes floating { 
+	from, to {
+		transform: translate(0,5%);
+	}
+	25% {
+		transform: translate(-5%,0);
+	}
+	50% {
+		transform: translate(0,-5%);
+	}
+	75% {
+		transform: translate(5%,0);
+	}
+	
+}
+
+/** CARD 1 - ALLURING **/ 
+.card1 {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+	
+	width: 35px;
+    height: 48px;
+	
+	/*bottom: 0; 
+	left: 0; 
+	right: 0; */
+	
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%; 
+	
+	z-index: 10;
+}
+
+
+.card1 div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+	
+}
+
+
+/*bacover will be the same */ 
+.card1 #front1 {
+	
+	left: 50px;
+	top: 30px; 
+	
+  	/*background: red; */ 
+  	background-image: url(../images/Backcover.png);
+	/* background-size:100% 100%; */ 
+	background-repeat: no-repeat;
+	
+	-webkit-animation-name: floating; 
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-duration: 4s; 
+	-webkit-animation-timing-function: ease-in-out; 
+
+	animation-name: floating;  /*floating 5s linear infinite; */ 
+	animation-iteration-count: infinite; /*infinite */ 
+	/* animation-direction: alternate; */ 
+	animation-duration: 4s; 
+	animation-timing-function: ease-in-out; 
+	
+}
+
+/*flipped pictures will be different so maybe use IDs*/ 
+.card1 #back1 {
+    /*background: blue;*/  
+	
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg ) translateX(200px) translateY(-760px) scale(0.3); /*rotateY( 180deg )*/ 
+
+    background-image: url(../images/Alluring.png);
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+
+}
+	
+/* new class states */ 
+.card1.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+.card1.enlarged {
+	/*
+	width: 350px;
+    height: 637px; */
+	width: 1128px;
+	height: 2234px; 
+	
+}
+
+/** CARD 2 - BREAK TIME **/ 
+
+.card2 {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+	
+	width: 35px;
+    height: 48px;
+	
+	/*bottom: 0; 
+	left: 0; 
+	right: 0; */
+	
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%; 
+	
+	z-index: 10;
+}
+
+
+.card2 div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+	
+}
+
+
+/* where the initial location is at */ 
+.card2 #front2 {
+	
+	right: -1400px; 
+	top: 500px; 
+	
+  	/*background: red; */ 
+  	background-image: url(../images/Backcover.png);
+	/* background-size:100% 100%; */ 
+	background-repeat: no-repeat;
+	
+	animation-name: floating;  /*floating 5s linear infinite; */ 
+	animation-iteration-count: infinite; /*infinite */ 
+	/* animation-direction: alternate; */ 
+	animation-duration: 4s; 
+	animation-timing-function: ease-in-out; 
+	
+}
+
+
+/*flipped pictures will be different so maybe use IDs*/ 
+.card2 #back2 {
+    /*background: blue;*/  
+	
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg ) translateX(200px) translateY(-760px) scale(0.3); /*rotateY( 180deg )*/ 
+
+    background-image: url(../images/BreakTime.png);
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+
+}
+	
+/* new class states */ 
+.card2.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+.card2.enlarged {
+	/*
+	width: 350px;
+    height: 637px; */
+	width: 1128px;
+	height: 2234px; 
+	
+}
+
+/** CARD 3 - DEMOTIVATED **/ 
+
+.card3 {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+	
+	width: 35px;
+    height: 48px;
+	
+	/*bottom: 0; 
+	left: 0; 
+	right: 0; */
+	
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%; 
+	
+	z-index: 10;
+}
+
+
+.card3 div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+	
+}
+
+
+/* where the initial location is at */ 
+.card3 #front3 {
+	
+	left: 300px; 
+	top: 200px; 
+	
+  	/*background: red; */ 
+  	background-image: url(../images/Backcover.png);
+	/* background-size:100% 100%; */ 
+	background-repeat: no-repeat;
+	
+	animation-name: floating;  /*floating 5s linear infinite; */ 
+	animation-iteration-count: infinite; /*infinite */ 
+	/* animation-direction: alternate; */ 
+	animation-duration: 4s; 
+	animation-timing-function: ease-in-out; 
+}
+
+
+/*flipped pictures will be different so maybe use IDs*/ 
+.card3 #back3 {
+    /*background: blue;*/  
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg ) translateX(200px) translateY(-760px) scale(0.3); /*rotateY( 180deg )*/ 
+
+    background-image: url(../images/Demotivated.png);
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+
+}
+	
+/* new class states */ 
+.card3.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+.card3.enlarged {
+	/*
+	width: 350px;
+    height: 637px; */
+	width: 1128px;
+	height: 2234px; 
+	
+}
+
+/** CARD 4 - FREEDOM **/ 
+
+.card4 {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+	
+	width: 35px;
+    height: 48px;
+	
+	/*bottom: 0; 
+	left: 0; 
+	right: 0; */
+	
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%; 
+	
+	z-index: 10;
+}
+
+
+.card4 div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+	
+}
+
+
+/* where the initial location is at */ 
+.card4 #front4 {
+	
+	left: 100px; 
+	top: 500px; 
+	
+  	/*background: red; */ 
+  	background-image: url(../images/Backcover.png);
+	/* background-size:100% 100%; */ 
+	background-repeat: no-repeat;
+	
+	animation-name: floating;  /*floating 5s linear infinite; */ 
+	animation-iteration-count: infinite; /*infinite */ 
+	/* animation-direction: alternate; */ 
+	animation-duration: 4s; 
+	animation-timing-function: ease-in-out; 
+	
+}
+
+
+/*flipped pictures will be different so maybe use IDs*/ 
+.card4 #back4 {
+    /*background: blue;*/  
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg ) translateX(200px) translateY(-760px) scale(0.3); /*rotateY( 180deg )*/ 
+
+    background-image: url(../images/Freedom.png);
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+
+}
+	
+/* new class states */ 
+.card4.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+.card4.enlarged {
+	/*
+	width: 350px;
+    height: 637px; */
+	width: 1128px;
+	height: 2234px; 
+}
+
+/** CARD 5 - HEAVY **/ 
+
+.card5 {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+	
+	width: 35px;
+    height: 48px;
+	
+	/*bottom: 0; 
+	left: 0; 
+	right: 0; */
+	
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%; 
+	
+	z-index: 10;
+}
+
+
+.card5 div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+	
+}
+
+
+/* where the initial location is at */ 
+.card5 #front5 {
+	
+	left: 1200px; 
+	top: 640px; 
+	
+  	/*background: red; */ 
+  	background-image: url(../images/Backcover.png);
+	/* background-size:100% 100%; */ 
+	background-repeat: no-repeat;
+	
+	animation-name: floating;  /*floating 5s linear infinite; */ 
+	animation-iteration-count: infinite; /*infinite */ 
+	/* animation-direction: alternate; */ 
+	animation-duration: 4s; 
+	animation-timing-function: ease-in-out; 
+	
+}
+
+
+/*flipped pictures will be different so maybe use IDs*/ 
+.card5 #back5 {
+    /*background: blue;*/  
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg ) translateX(200px) translateY(-760px) scale(0.3); /*rotateY( 180deg )*/ 
+
+    background-image: url(../images/Heavy.png);
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+
+}
+	
+/* new class states */ 
+.card5.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+.card5.enlarged {
+	/*
+	width: 350px;
+    height: 637px; */
+	width: 1128px;
+	height: 2234px; 
+}
+
+/** CARD 6 - SILENCE **/ 
+.card6 {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+	
+	width: 35px;
+    height: 48px;
+	
+	/*bottom: 0; 
+	left: 0; 
+	right: 0; */
+	
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%; 
+	
+	z-index: 10;
+}
+
+
+.card6 div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+	
+}
+
+
+/* where the initial location is at */ 
+.card6 #front6 {
+	
+	left: 1100px; 
+	top: 50px; 
+	
+  	/*background: red; */ 
+  	background-image: url(../images/Backcover.png);
+	/* background-size:100% 100%; */ 
+	background-repeat: no-repeat;
+	
+	animation-name: floating;  /*floating 5s linear infinite; */ 
+	animation-iteration-count: infinite; /*infinite */ 
+	/* animation-direction: alternate; */ 
+	animation-duration: 4s; 
+	animation-timing-function: ease-in-out; 
+	
+}
+
+
+/*flipped pictures will be different so maybe use IDs*/ 
+.card6 #back6 {
+    /*background: blue;*/  
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg ) translateX(200px) translateY(-760px) scale(0.3); /*rotateY( 180deg )*/ 
+
+    background-image: url(../images/Silence.png);
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+
+}
+	
+/* new class states */ 
+.card6.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+.card6.enlarged {
+	/*
+	width: 350px;
+    height: 637px; */
+	width: 1128px;
+	height: 2234px; 
+}
+
+/** CARD 7 - STUCK **/ 
+.card7 {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+	
+	width: 35px;
+    height: 48px;
+	
+	/*bottom: 0; 
+	left: 0; 
+	right: 0; */
+	
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%; 
+	
+	z-index: 10;
+}
+
+.card7 div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+/* where the initial location is at */ 
+.card7 #front7 {
+	
+	left: 400px; 
+	top: 600px; 
+	
+  	/*background: red; */ 
+  	background-image: url(../images/Backcover.png);
+	/* background-size:100% 100%; */ 
+	background-repeat: no-repeat;
+	
+	animation-name: floating;  /*floating 5s linear infinite; */ 
+	animation-iteration-count: infinite; /*infinite */ 
+	/* animation-direction: alternate; */ 
+	animation-duration: 4s; 
+	animation-timing-function: ease-in-out; 
+}
+
+
+/*flipped pictures will be different so maybe use IDs*/ 
+.card7 #back7 {
+    /*background: blue;*/  
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg ) translateX(200px) translateY(-760px) scale(0.3); /*rotateY( 180deg )*/ 
+
+    background-image: url(../images/Stuck.png);
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	
+}
+	
+/* new class states */ 
+.card7.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+.card7.enlarged {
+	/*
+	width: 350px;
+    height: 637px; */
+	width: 1128px;
+	height: 2234px; 
+}
+/** CARD 8 - TRAPPED **/ 
+.card8 {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+	
+	width: 35px;
+    height: 48px;
+	
+	/*bottom: 0; 
+	left: 0; 
+	right: 0; */
+	
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%; 
+	
+	z-index: 10;
+}
+
+.card8 div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+/* where the initial location is at */ 
+.card8 #front8 {
+	
+	left: 1320px; 
+	top: 180px; 
+	
+  	/*background: red; */ 
+  	background-image: url(../images/Backcover.png);
+	/* background-size:100% 100%; */ 
+	background-repeat: no-repeat;
+	
+	animation-name: floating;  /*floating 5s linear infinite; */ 
+	animation-iteration-count: infinite; /*infinite */ 
+	/* animation-direction: alternate; */ 
+	animation-duration: 4s; 
+	animation-timing-function: ease-in-out; 
+}
+
+
+/*flipped pictures will be different so maybe use IDs*/ 
+.card8 #back8 {
+    /*background: blue;*/  
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg ) translateX(200px) translateY(-760px) scale(0.3); /*rotateY( 180deg )*/ 
+
+    background-image: url(../images/Trapped.png);
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+
+}
+	
+/* new class states */ 
+.card8.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+.card8.enlarged {
+	/*
+	width: 350px;
+    height: 637px; */
+	width: 1128px;
+	height: 2234px; 
+}
+
+/** CARD 9 - UNEASY **/ 
+.card9 {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+	
+	width: 35px;
+    height: 48px;
+	
+	/*bottom: 0; 
+	left: 0; 
+	right: 0; */
+	
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%; 
+	
+	z-index: 10;
+}
+
+.card9 div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+/* where the initial location is at */ 
+.card9 #front9 {
+	
+	left: 1000px; 
+	top: 400px; 
+	
+  	/*background: red; */ 
+  	background-image: url(../images/Backcover.png);
+	/* background-size:100% 100%; */ 
+	background-repeat: no-repeat;
+	
+	animation-name: floating;  /*floating 5s linear infinite; */ 
+	animation-iteration-count: infinite; /*infinite */ 
+	/* animation-direction: alternate; */ 
+	animation-duration: 4s; 
+	animation-timing-function: ease-in-out; 
+}
+
+
+/*flipped pictures will be different so maybe use IDs*/ 
+.card9 #back9 {
+    /*background: blue;*/  
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg ) translateX(200px) translateY(-760px) scale(0.3); /*rotateY( 180deg )*/ 
+
+    background-image: url(../images/Uneasy.png);
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+}
+	
+/* new class states */ 
+.card9.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+.card9.enlarged {
+	/*
+	width: 350px;
+    height: 637px; */
+	width: 1128px;
+	height: 2234px; 
+}
+/** CARD 10 - UNMOTIVATED **/ 
+.card10 {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+	
+	width: 35px;
+    height: 48px;
+	
+	/*bottom: 0; 
+	left: 0; 
+	right: 0; */
+	
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%; 
+	
+	z-index: 10;
+}
+
+.card10 div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+/* where the initial location is at */ 
+.card10 #front10 {
+	
+	left: 600px; 
+	top: 30px; 
+	
+  	/*background: red; */ 
+  	background-image: url(../images/Backcover.png);
+	/* background-size:100% 100%; */ 
+	background-repeat: no-repeat;
+	
+	animation-name: floating;  /*floating 5s linear infinite; */ 
+	animation-iteration-count: infinite; /*infinite */ 
+	/* animation-direction: alternate; */ 
+	animation-duration: 4s; 
+	animation-timing-function: ease-in-out; 
+}
+
+
+/*flipped pictures will be different so maybe use IDs*/ 
+.card10 #back10 {
+    /*background: blue;*/  
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg ) translateX(200px) translateY(-760px) scale(0.3); /*rotateY( 180deg )*/ 
+
+    background-image: url(../images/Unmotivated.png);
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+}
+	
+/* new class states */ 
+.card10.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+.card10.enlarged {
+	/*
+	width: 350px;
+    height: 637px; */
+	width: 1128px;
+	height: 2234px; 
+}
+
+/** CARD 11 - WHIRLDWIND **/ 
+.card11 {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+	
+	width: 35px;
+    height: 48px;
+	
+	/*bottom: 0; 
+	left: 0; 
+	right: 0; */
+	
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%; 
+	
+	z-index: 10;
+}
+
+.card11 div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+/* where the initial location is at */ 
+.card11 #front11 {
+	
+	left: 500px; 
+	top: 400px; 
+	
+  	/*background: red; */ 
+  	background-image: url(../images/Backcover.png);
+	/* background-size:100% 100%; */ 
+	background-repeat: no-repeat;
+	
+	animation-name: floating;  /*floating 5s linear infinite; */ 
+	animation-iteration-count: infinite; /*infinite */ 
+	/* animation-direction: alternate; */ 
+	animation-duration: 4s; 
+	animation-timing-function: ease-in-out; 
+}
+
+
+/*flipped pictures will be different so maybe use IDs*/ 
+.card11 #back11 {
+    /*background: blue;*/  
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg ) translateX(200px) translateY(-760px) scale(0.3); /*rotateY( 180deg )*/ 
+
+    background-image: url(../images/Whirldwind.png);
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+}
+	
+/* new class states */ 
+.card11.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+.card11.enlarged {
+	/*
+	width: 350px;
+    height: 637px; */
+	width: 1128px;
+	height: 2234px; 
+}
+
+
+/* BLACKHOLE */ 
+/*stars background */ 
+
+#blackhole {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	display: flex;
+	padding: 0; 
+}
+
+.centerHover {
+	width: 255px;
+	height: 255px;
+	background-color: transparent;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -128px;
+	margin-left: -128px;
+	z-index: 2;
+	cursor: pointer;
+	line-height: 255px;
+	text-align: center;
+	transition: all 500ms;
+
+}
+
+.centerHover.open {
+		opacity: 0;
+		pointer-events: none;
+	}
+	
+.centerHover:hover span {
+		color: #DDD;
+}
+	
+.centerHover:hover span:before { background-color: #DDD;}
+.centerHover:hover span:after { background-color: #DDD; }
+		
+span {
+		color: #666;
+		font-family: serif;
+		font-size: 18px;
+		position: relative;
+		transition: all 500ms;
+	}
+	
+	/* & seems like a reference to the element that is span - these are the bars beside the wording */ 
+		span:before {
+			content: '';
+			display: inline-block;
+			height: 1px;
+			width: 16px;
+			margin-right: 12px;
+			margin-bottom: 4px;  
+			background-color: #666;
+			transition: all 500ms;
+		}
+		span:after {
+			content: '';
+			display: inline-block;
+			height: 1px;
+			width: 16px;
+			margin-left: 12px;
+			margin-bottom: 4px; 
+			background-color: #666;
+			transition: all 500ms;
+		}
+
+canvas {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	margin: auto; 
+	padding: 0; 
+}
+
+a:hover {
+	color:#c1c1c1;
+}
+
+footer {
+	position: absolute; 
+	z-index: 5; 
+	bottom: 20px;
+	right: 20px; 
+}
+
+footer a {
+	color: white; 
+	text-decoration: none; 
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-size: 14px; 
+}
+
+/* CREDITS */ 
+
+#creds {
+	padding: 10px 20px; 
+	color: white; 
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-size: 14px; 
+}
+
+#creds h1 {
+	font-size: 24px; 
+	margin: 0;
+	padding: 0; 
+}
+
+/* ABOUT */ 
+
+#about {
+	padding: 10px 20px; 
+	color: white; 
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-size: 14px; 
+}
+
+#about h1 {
+	font-size: 24px; 
+	margin: 0;
+	padding: 0; 
+}
+
+#about h2, h3{
+	margin: 0;
+	padding: 0; 
+}
+
+
+#inspo a{
+	color: #ffc0cb; /* to adjust */ 
+	text-decoration: none; 
+	font-family: 'Baloo Tammudu 2', cursive;
+	
+}
+
+#inspo a:hover {
+	color: #CCC; 
+}
+
