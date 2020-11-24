@@ -6,11 +6,17 @@ $('.card').click(flipIt);
 
 */ 
 
+var c1 = document.getElementById('front1'); 
+var c2 = document.getElementById('front2'); 
+
+
 $(document).ready(function(){
-	$(".card").on('click', function() {	
-		$('.card').toggleClass('flipped'); 
-		$('.card').toggleClass('enlarged'); 
-		
+	
+
+	$(".card1").on('click', function() {	
+	
+		$('.card1').toggleClass('flipped'); 
+		$('.card1').toggleClass('enlarged'); 
 		//check if the card has this class in it - don't need for now 
 		/*
 		$('.card').classList.contains('.back') {
@@ -30,9 +36,20 @@ $(document).ready(function(){
 			});
 		}
 		*/ 
-		
-	
 	}); 
+	
+	
+	$(".card2").on('click', function() {	
+	
+		$('.card2').toggleClass('flipped'); 
+		$('.card2').toggleClass('enlarged'); 
+	}); 
+	
+	
+	
+	
+	
+	
 });
 
 /*how to code elements to move 
@@ -211,7 +228,7 @@ function blackhole(element) {
 		expanse = true;
 		
 		//make the cards appeart
-		$('.card').toggleClass('show'); 
+		$('.cards').toggleClass('show'); 
 
 		$(this).addClass('open');
 		$('.fullpage').addClass('open');
