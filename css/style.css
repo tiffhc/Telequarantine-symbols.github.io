@@ -44,6 +44,10 @@ body {
 
 
 .cards.show {
+	-webkit-animation-name: showup; 
+	-webkit-animation-duration: 5s; 
+	-webkit-animation-timing-function: ease-in-out; 
+	-webkit-animation-iteration-count: 1; 
 	
 	animation-name: showup; 
 	animation-duration: 5s; 
@@ -128,6 +132,11 @@ body {
 	/* background-size:100% 100%; */ 
 	background-repeat: no-repeat;
 	
+	-webkit-animation-name: floating; 
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-duration: 4s; 
+	-webkit-animation-timing-function: ease-in-out; 
+
 	animation-name: floating;  /*floating 5s linear infinite; */ 
 	animation-iteration-count: infinite; /*infinite */ 
 	/* animation-direction: alternate; */ 
