@@ -122,8 +122,6 @@ function cardscontrol() {
 
 blackhole('#blackhole');
 
-var ubody = getElementById('universe'); 
-
 function blackhole(element) {
 	var h = $(element).height(), //formerly known as element
 	    w = $(element).width(),
