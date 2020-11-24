@@ -45,10 +45,59 @@ $(document).ready(function(){
 		$('.card2').toggleClass('enlarged'); 
 	}); 
 	
+	$(".card3").on('click', function() {	
 	
+		$('.card3').toggleClass('flipped'); 
+		$('.card3').toggleClass('enlarged'); 
+	}); 
 	
+	$(".card4").on('click', function() {	
 	
+		$('.card4').toggleClass('flipped'); 
+		$('.card4').toggleClass('enlarged'); 
+	}); 
 	
+	$(".card5").on('click', function() {	
+	
+		$('.card5').toggleClass('flipped'); 
+		$('.card5').toggleClass('enlarged'); 
+	}); 
+	
+	$(".card6").on('click', function() {	
+	
+		$('.card6').toggleClass('flipped'); 
+		$('.card6').toggleClass('enlarged'); 
+	}); 
+	
+	$(".card7").on('click', function() {	
+	
+		$('.card7').toggleClass('flipped'); 
+		$('.card7').toggleClass('enlarged'); 
+	}); 
+	
+	$(".card8").on('click', function() {	
+	
+		$('.card8').toggleClass('flipped'); 
+		$('.card8').toggleClass('enlarged'); 
+	}); 
+	
+	$(".card9").on('click', function() {	
+	
+		$('.card9').toggleClass('flipped'); 
+		$('.card9').toggleClass('enlarged'); 
+	}); 
+	
+	$(".card10").on('click', function() {	
+	
+		$('.card10').toggleClass('flipped'); 
+		$('.card10').toggleClass('enlarged'); 
+	}); 
+	
+	$(".card11").on('click', function() {	
+	
+		$('.card11').toggleClass('flipped'); 
+		$('.card11').toggleClass('enlarged'); 
+	}); 
 	
 });
 
