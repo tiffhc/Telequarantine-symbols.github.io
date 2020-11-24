@@ -128,7 +128,7 @@ body {
 	top: 30px; 
 	
   	/*background: red; */ 
-  	background-image: url(./images/Backcover.png);
+  	background-image: url(../images/Backcover.png);
 	/* background-size:100% 100%; */ 
 	background-repeat: no-repeat;
 	
@@ -155,7 +155,7 @@ body {
     -o-transform: rotateY( 180deg );
     transform: rotateY( 180deg ) translateX(200px) translateY(-760px) scale(0.3); /*rotateY( 180deg )*/ 
 
-    background-image: url(./images/Alluring.png);
+    background-image: url(../images/Alluring.png);
 	background-size:100% 100%;
 	background-repeat: no-repeat;
 	
