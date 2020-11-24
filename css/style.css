@@ -1,5 +1,4 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap'); /*baloo tammudu 2 */ 
 
 html, body {
 	height: 100%; 
@@ -1158,7 +1157,8 @@ footer {
 footer a {
 	color: white; 
 	text-decoration: none; 
-	font-family: serif;
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-size: 14px; 
 }
 
 /* CREDITS */ 
@@ -1166,7 +1166,14 @@ footer a {
 #creds {
 	padding: 10px 20px; 
 	color: white; 
-	font-family: serif;
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-size: 14px; 
+}
+
+#creds h1 {
+	font-size: 24px; 
+	margin: 0;
+	padding: 0; 
 }
 
 /* ABOUT */ 
@@ -1174,17 +1181,30 @@ footer a {
 #about {
 	padding: 10px 20px; 
 	color: white; 
-	font-family: serif;
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-size: 14px; 
+}
+
+#about h1 {
+	font-size: 24px; 
+	margin: 0;
+	padding: 0; 
+}
+
+#about h2, h3{
+	margin: 0;
+	padding: 0; 
 }
 
 
 #inspo a{
 	color: #ffc0cb; /* to adjust */ 
 	text-decoration: none; 
-	font-family: serif;
+	font-family: 'Baloo Tammudu 2', cursive;
 	
 }
 
 #inspo a:hover {
 	color: #CCC; 
 }
+
