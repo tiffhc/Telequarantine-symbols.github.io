@@ -1136,6 +1136,10 @@ canvas {
 	padding: 0; 
 }
 
+a:hover {
+	color:#c1c1c1;
+}
+
 footer {
 	position: absolute; 
 	z-index: 5; 
@@ -1146,6 +1150,7 @@ footer {
 footer a {
 	color: white; 
 	text-decoration: none; 
+	font-family: serif;
 }
 
 /* CREDITS */ 
@@ -1153,5 +1158,5 @@ footer a {
 #creds {
 	padding: 10px 20px; 
 	color: white; 
-	
+	font-family: serif;
 }
