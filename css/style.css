@@ -695,6 +695,7 @@ body {
     background-image: url(../images/Stuck.png);
 	background-size:100% 100%;
 	background-repeat: no-repeat;
+	
 }
 	
 /* new class states */ 
@@ -780,6 +781,7 @@ body {
     background-image: url(../images/Trapped.png);
 	background-size:100% 100%;
 	background-repeat: no-repeat;
+
 }
 	
 /* new class states */ 
@@ -925,7 +927,7 @@ body {
 .card10 #front10 {
 	
 	left: 600px; 
-	top: 20px; 
+	top: 30px; 
 	
   	/*background: red; */ 
   	background-image: url(../images/Backcover.png);
@@ -1010,8 +1012,8 @@ body {
 /* where the initial location is at */ 
 .card11 #front11 {
 	
-	left: 700px; 
-	top: 500px; 
+	left: 500px; 
+	top: 400px; 
 	
   	/*background: red; */ 
   	background-image: url(../images/Backcover.png);
