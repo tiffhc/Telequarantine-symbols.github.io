@@ -1177,13 +1177,14 @@ footer a {
 	font-family: serif;
 }
 
-#about a{
+
+#inspo a{
 	color: #ffc0cb; /* to adjust */ 
 	text-decoration: none; 
 	font-family: serif;
 	
 }
 
-#about a:hover {
+#inspo a:hover {
 	color: #CCC; 
 }
