@@ -276,6 +276,9 @@ function blackhole(element) {
 		
 		//make the cards appeart
 		$('.cards').toggleClass('show'); 
+		
+		//make the instruction disappear 
+		$('.instructions').toggleClass('leave'); 
 
 		$(this).addClass('open');
 		$('.fullpage').addClass('open');
