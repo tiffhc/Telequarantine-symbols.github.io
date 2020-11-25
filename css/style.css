@@ -1278,7 +1278,8 @@ footer a {
 	font-size: 12px; 
 	
 	position: absolute; 
-	top: 670px;
+	/*top: 670px; */
+	bottom: 20px;
 	left: 710px;
 	opacity: 0.5; 
 }
