@@ -81,7 +81,7 @@ body {
 	top: 50%; */
 	
 	top: 200px;
-	left: 630px;
+	left: 635px; /*630 */
 	
 	margin-left: auto;
 	margin-right: auto; 
@@ -1271,3 +1271,19 @@ footer a {
 	color: #CCC; 
 }
 
+#name {
+	color: #DDD; 
+	z-index: 40; 
+	font-family: 'Baloo Tammudu 2', cursive;
+	font-size: 12px; 
+	
+	position: absolute; 
+	top: 670px;
+	left: 710px;
+	opacity: 0.5; 
+}
+
+#name:hover{
+	color: #FFF; 
+	opacity: 0.8; 
+}
